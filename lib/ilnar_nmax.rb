@@ -1,7 +1,7 @@
 require "ilnar_nmax/version"
 
 module IlnarNmax
-	def self.nmax(file = ARGV[0], numbers = ARGV[1])
+	def self.nmax(file = ARGV[0], n = ARGV[1])
 	  numbers = []  #создаём массив
 	  file.each_line do |line| #
 	    line.scan(/[0-9]{1,1000}/).each{|i| numbers << i.to_i} # фильтруем числа из текста и кладём в массив преобразовав в integer
