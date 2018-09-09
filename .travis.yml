@@ -1,5 +1,12 @@
-sudo: false
 language: ruby
-rvm:
-  - 2.5.0
-before_install: gem install bundler -v 1.16.1
+script: 'true'
+deploy:
+  provider: cloudfoundry
+  api: ilnar_nmax
+  username: ilnar4888
+  password:
+    secure: Xj8W8h6e7Jz/jahgaH+nt8AJxp4BrgERg2SJOyNk53D7QDDSQNImcMle82C9yVBk2phF0N2vuOePljVd4EWnJny1SHZb3y3FY5MjOccD/RPBh7fMYAyX4kYVjxama2Oi2Q9vMB1XTKcT7gAokj9w3GXsppGJdc5gTHJD49bR76es6FGVOvUXFmlrMUnoxao9KFfoDfbPfE0tj/dSCe8GtESa13jNC0l3fUX+u2164jias5h9C3ZzuxrifX830XUr7bl6ALnMc+aKd/+no6tZAGq1LAlX8JlEvuokHpOS5Vk5VOuZRpALZDOUmWu0M+EKtn255KQcTW/dQzgAzP1B2mbl5vniEZFlDjaYzSB9m5XbeqUDWTM9FICAPxxj6lJ0WGKoxEnTtG+9+1sSBF4FT0x4Ec+f5v1tm6KecgeG98h+H1Ft+n3US6K9f58DB+b1ZYWbszDWhisiDvevkUibCPp82TBSWKgmgtFOYpdsDj3KERpwWWuVjmIi+LkWApTqyVD2o0hiSeFCuq76AS4PjFXwWqvD+CC5R1WV7dGDG3IgXDtx/Dq3SKNsKlnzjlhKMjTqTOCpOjflIfSatBSnwZlainMMTwqUXRdlwfFc4y9ylpJE0+Yxuw/lKCA5y+5j3uliS4tbgxrhSedNX5sb2bqLfQxgHOgDOdrN6EJ6mg0=
+  organization: ilnar
+  space: ''
+  on:
+    repo: ilnar4888/ilnar_nmax
