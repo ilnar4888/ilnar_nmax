@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'ilnar_nmax'
+IlnarNmax.nmax
